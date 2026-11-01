@@ -1146,7 +1146,9 @@ export function App() {
                         color: '#ffffff',
                         fontSize: 13,
                         fontWeight: 600,
-                        outline: 'none'
+                        outline: 'none',
+                        colorScheme: 'dark',
+                        cursor: 'pointer'
                       }}
                     />
                   </div>
@@ -1166,7 +1168,9 @@ export function App() {
                         color: '#ffffff',
                         fontSize: 13,
                         fontWeight: 600,
-                        outline: 'none'
+                        outline: 'none',
+                        colorScheme: 'dark',
+                        cursor: 'pointer'
                       }}
                     />
                   </div>
