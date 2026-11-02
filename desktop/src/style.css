@@ -21,20 +21,28 @@ body, html {
 }
 
 /* High contrast native date picker indicators in dark theme */
-input[type="date"] {
+input[type="date"],
+.custom-date-picker {
   color-scheme: dark !important;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator,
+.custom-date-picker::-webkit-calendar-picker-indicator {
   cursor: pointer !important;
-  filter: invert(1) brightness(2) !important;
   opacity: 1 !important;
-  border-radius: 4px;
-  padding: 2px;
+  filter: invert(1) brightness(2) !important;
+  -webkit-filter: invert(1) brightness(2) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='4' rx='2' ry='2'/%3E%3Cline x1='16' x2='16' y1='2' y2='6'/%3E%3Cline x1='8' x2='8' y1='2' y2='6'/%3E%3Cline x1='3' x2='21' y1='10' y2='10'/%3E%3C/svg%3E") !important;
+  background-size: 16px 16px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 18px !important;
+  height: 18px !important;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator:hover {
-  background-color: rgba(56, 189, 248, 0.3) !important;
-  filter: invert(0.8) sepia(1) saturate(5) hue-rotate(175deg) brightness(1.5) !important;
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+.custom-date-picker::-webkit-calendar-picker-indicator:hover {
+  background-color: rgba(56, 189, 248, 0.25) !important;
+  border-radius: 4px !important;
 }
 

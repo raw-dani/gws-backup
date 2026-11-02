@@ -1136,6 +1136,7 @@ export function App() {
                     <span>Dari Tanggal:</span>
                     <input
                       type="date"
+                      className="custom-date-picker"
                       value={startDateFilter}
                       onChange={(e) => setStartDateFilter(e.target.value)}
                       style={{
@@ -1158,6 +1159,7 @@ export function App() {
                     <span>Sampai Tanggal:</span>
                     <input
                       type="date"
+                      className="custom-date-picker"
                       value={endDateFilter}
                       onChange={(e) => setEndDateFilter(e.target.value)}
                       style={{
